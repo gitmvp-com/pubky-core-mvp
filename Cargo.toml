@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "common",
+    "server",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+authors = ["GitMVP"]
+license = "MIT"
+
+[profile.release]
+lto = true
+opt-level = 'z'
